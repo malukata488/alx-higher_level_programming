@@ -26,7 +26,7 @@ class Node:
         self.__data = value
 
     @property
-def next_node(self):
+    def next_node(self):
         """get next_node attribute
         Returns: next node
         """
