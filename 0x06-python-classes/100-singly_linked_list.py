@@ -26,7 +26,7 @@ class Node:
         self.__data = value
 
     @property
-    def next_node(self):
+def next_node(self):
         """get next_node attribute
         Returns: next node
         """
@@ -59,7 +59,7 @@ class SinglyLinkedList:
         while location:
             printsll += str(location.data) + "\n"
             location = location.next_node
-                    return printsll[:-1]
+        return printsll[:-1]
 
     def sorted_insert(self, value):
         """insert in a sorted fashion
