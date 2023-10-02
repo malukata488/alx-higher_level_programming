@@ -76,6 +76,11 @@ def xout(board, row, col):
         c += 1
     # X out all spots diagonally down to the left
     c = col - 1
+    for r in range(row + 1, len(board)):
+        if c < 0:
+            break
+        board[r][c] = "x"
+        c -= 1
 
 
 def recursive_solve(board, row, queens, solutions):
